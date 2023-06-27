@@ -16,7 +16,7 @@ export default function Project({ project }: any) {
                     }
                 </div>
                 <h4 className={projectS.project__title}>{project.name}</h4>
-                <p className={style.section__text}>{project.info}</p>
+                <p className={`${style.section__text} ${projectS.project__text}`}>{project.info}</p>
                 <div className={style.flexList}>
                     {
                         project.urlDemo &&

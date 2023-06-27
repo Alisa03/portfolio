@@ -1,7 +1,7 @@
 import { useState } from "react"
 
-import style from "./menu.module.scss"
-import styles from "@/styles/page.module.scss"
+import menu from "./menu.module.scss"
+import style from "@/styles/page.module.scss"
 
 import MenuList from '@/components/ui/MenuList'
 
@@ -15,12 +15,12 @@ const MobileMenu = () => {
 
     return (
         <>
-            <MenuList styleList={style.menu} />
-            <button onClick={Modal} className={`${styles.btn} ${style.burger} ${styles.flexCG} ${styles.flexAc}`}>
+            <MenuList styleList={menu.menu} />
+            <button onClick={Modal} className={`${style.btn} ${style.burger} ${style.flexCG} ${style.flexAc}`}>
                 <span className={style.burger__line} />
                 <span className={style.burger__line} />
             </button>
-            <MenuList Click={Modal} styleList={`${style.dropdownMenu} ${open ? style.visible : ''}`} />
+            <MenuList Click={Modal} styleList={`${menu.dropdownMenu} ${open ? menu.visible : ''}`} />
         </>
     )
 }

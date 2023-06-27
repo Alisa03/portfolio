@@ -12,21 +12,6 @@
     }
 }
 
-.burger {
-    display: none;
-
-    width: 40px;
-    height: 40px;
-
-    &__line {
-        display: block;
-        width: 30px;
-        height: 3px;
-
-        background: $lightBlue;
-    }
-}
-
 .dropdownMenu {
     position: fixed;
     inset: 0;
@@ -52,12 +37,4 @@
 
 @media (max-width: 650px) {
     .menu {display: none}
-
-    .burger {
-        display: flex;
-        justify-content: center;
-        gap: 10px 0;
-
-        z-index: 150;
-    }
 }

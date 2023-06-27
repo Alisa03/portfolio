@@ -94,6 +94,12 @@ $shadows-big: generateStart(300);
 
     &__content {grid-area: 1 / 1 / 6 / 6}
 
+    &__title {
+        text-align: center;
+        z-index: 50;
+        font: 500 6rem/1 'Lato';
+    }
+
     &__scroll {
         position: relative;
         display: block;
@@ -136,6 +142,10 @@ $shadows-big: generateStart(300);
     .head__title {font-size: 4rem}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
     .head__title {font-size: 3rem}
+}
+
+@media (max-width: 400px) {
+    .head__title {font-size: 2.5rem}
 }

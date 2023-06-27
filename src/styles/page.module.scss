@@ -22,12 +22,6 @@
 
 .color {color: $hoverColor}
 
-._title {
-    text-align: center;
-    z-index: 50;
-    font: 500 6rem/1 'Lato';
-}
-
 .flexAc {
     display: flex;
     align-items: center
@@ -100,6 +94,21 @@
     }
 }
 
+.burger {
+    display: none;
+
+    width: 40px;
+    height: 40px;
+
+    &__line {
+        display: block;
+        width: 30px;
+        height: 3px;
+
+        background: $lightBlue;
+    }
+}
+
 .social {
     & path {transition: fill ease 1s6}
 
@@ -118,6 +127,16 @@
     }
 }
 
+@media (max-width: 650px) {
+    .burger {
+        display: flex;
+        justify-content: center;
+        gap: 10px 0;
+
+        z-index: 150;
+    }
+}
+
 @media (max-width: 500px) {
     .container {width: 90%}
 
@@ -125,10 +144,14 @@
         width: 95vw;
         margin: 0 auto
     }
+
+    .section__title {
+        font-size: 3rem;
+    }
 }
 
 @media (max-width: 400px) {
     .container {width: 98%}
 
-    .section__title {font-size: 2rem}
+    .section__title {font-size: 2.2rem}
 }
