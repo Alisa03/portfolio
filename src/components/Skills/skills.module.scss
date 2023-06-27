@@ -1,0 +1,16 @@
+@import '@/styles/constStyle.scss';
+
+._block {
+    width: 250px;
+    padding: 40px 20px;
+
+    background: rgb(21, 23, 27);
+    border: 1px solid rgb(70, 77, 104);
+    border-radius: 10px;
+
+    text-align: center 
+}
+
+@media (max-width: 400px) {
+    ._block {width: 100%}
+}

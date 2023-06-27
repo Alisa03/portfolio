@@ -1,0 +1,134 @@
+@import '@/styles/constStyle.scss';
+
+.container {
+    width: 88%;
+    margin: 0 auto
+}
+
+.block {height: 80vh}
+
+.section {
+    margin: 8vh auto;
+
+    &__flex {
+        display: flex;
+        gap:0 30px
+    }
+
+    &__title {font: 400 4rem/1 'Lato'}
+
+    &__text {font: 400 1rem/1 'Inter'}
+}
+
+.color {color: $hoverColor}
+
+._title {
+    text-align: center;
+    z-index: 50;
+    font: 500 6rem/1 'Lato';
+}
+
+.flexAc {
+    display: flex;
+    align-items: center
+}
+
+.wrapper_flex {justify-content: space-between}
+
+.flexJc {justify-content: center}
+
+.flexCG {
+    flex-direction: column;
+    gap: 1.8vh 0;
+}
+
+.flexList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8vh 10px;
+}
+
+.logo {
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: $hoverColor
+}
+
+.btn {
+    --blue: 125, 160, 202;
+    --darkBlue: 5, 38, 89;
+
+    position: relative;
+
+    background: rgba(var(--darkBlue), .2);
+    border: 2px solid rgb(var(--blue));
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgb(var(--darkBlue)),
+        0 0 5px 3px rgba(var(--blue), .1);
+
+    font-size: .8rem;
+
+    padding: .5rem 1rem;
+    overflow: hidden;
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: inset 0 0 5px rgba(var(--darkBlue), .6),
+            0 0 9px 3px rgba(var(--darkBlue), .2);
+
+        color: rgb(var(--blue));
+
+        &:before {
+            transform: translateX(15em);
+        }
+
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+
+        left: -4em;
+        top: 0;
+
+        width: 4em;
+        height: 100%;
+
+        background: rgba(var(--darkGreen), .2);
+
+        transition: transform .4s ease-in-out
+    }
+}
+
+.social {
+    & path {transition: fill ease 1s6}
+
+    &:hover path {fill: $hoverColor}
+}
+
+
+@media (min-width: 2000px) {
+    .container {width: 60%}
+}
+
+@media (max-width: 770px) {
+    .section__flex {
+        flex-direction: column;
+        gap: 30px 0
+    }
+}
+
+@media (max-width: 500px) {
+    .container {width: 90%}
+
+    .project__img {
+        width: 95vw;
+        margin: 0 auto
+    }
+}
+
+@media (max-width: 400px) {
+    .container {width: 98%}
+
+    .section__title {font-size: 2rem}
+}

@@ -1,0 +1,55 @@
+.project {
+    margin: 20px 0;
+
+    &__img {
+        width: 47vw;
+        border-radius: 10px;
+        display: block;
+        transition: 1s ease;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        width: 50%;
+    }
+
+    &__title {font: 400 2rem/1 "Lato"}
+
+        &__block {
+            width: 50vw;
+            border-radius: 10px;
+            display: inline-block;
+            overflow: hidden;
+        }
+}
+
+@media (max-width: 770px) {
+    .project__content {
+        gap: 20px 0;
+
+        width: 100%;
+    }
+
+    .project__img {
+        width: 100%;
+        max-width: 100%
+    }
+
+    .project__block {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .project__img {
+        width: 95vw;
+        margin: 0 auto
+    }
+}
