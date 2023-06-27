@@ -1,4 +1,4 @@
-import style from './header_content.module.scss'
+import style from './header.module.scss'
 import page from '@/styles/page.module.scss'
 
 const HeaderContent = () => {
