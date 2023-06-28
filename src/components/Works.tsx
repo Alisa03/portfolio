@@ -8,7 +8,7 @@ const Works = () => {
 
     return (
         <section id="works" className={style.section}>
-            <h3 className={style.section__title}>WORKS</h3>
+            <h3 className={style.section__title}>Работы</h3>
             <div>
                 {
                     works.map((i: any) => <Project key={i.id} project={i} />)

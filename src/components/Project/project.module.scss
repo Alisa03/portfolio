@@ -36,6 +36,17 @@
     }    
 }
 
+.teg {
+        
+    background: #0527591a;
+    border: 2px solid $blue;
+    border-radius: 10px;
+
+    font-size: .8rem;
+    
+    padding: .5rem 1rem;
+}
+
 @media (min-width: 2000px) {
     .project__block {width: 40vw}
 

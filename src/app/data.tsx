@@ -23,7 +23,7 @@ export const works = [
     {
         id: 3,
         name: "Finsweet",
-        info: "Первая работа, сделан для знакомства с React.",
+        info: "Многостраничный сайт созданный для знакомства с церковью.",
         img: "/finsweet.webp",
         skill: [
             "React", "JavaScript", "styled-components"
@@ -35,12 +35,12 @@ export const works = [
     {
         id: 4,
         name: "Epixelab",
-        info: "Одна из первых работ, простой сайт с фактами о котах. Знакомство с scss.",
+        info: "Лендинг для фактов о котах.",
         img: "/epixelab.webp",
         skill: [
             "html", "scss"
         ],
-        urlDemo: 'alisa03.github.io/epixelab/',
+        urlDemo: 'https://alisa03.github.io/epixelab/',
         urlCode: 'https:github.com/Alisa03/epixelab'
     }
 ]

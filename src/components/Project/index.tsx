@@ -12,7 +12,7 @@ export default function Project({ project }: any) {
             <div className={`${projectS.project__content}`}>
                 <div className={style.flexList}>
                     {
-                        project.skill.map((i: any, index: any) => <div key={index} className={style.btn}>{i}</div>)
+                        project.skill.map((i: any, index: any) => <div key={index} className={projectS.teg}>{i}</div>)
                     }
                 </div>
                 <h4 className={projectS.project__title}>{project.name}</h4>
