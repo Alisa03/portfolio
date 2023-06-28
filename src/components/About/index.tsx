@@ -6,7 +6,7 @@ import style from '@/styles/page.module.scss'
 const About = () => {
     return (
         <section id="about" className={style.section} style={{ textAlign: "center" }}>
-            <h2 className={style.section__title}>Приветствую на моем <span className={style.color}>сайте</span></h2>
+            <h2 className={style.section__title}>Приветствую на моем <span className={style.color}>портфолио</span></h2>
             <ScrollAnimation>
                 <p className={`${style.section__text} ${about.text}`}>
                     Меня зовут Алиса. Вот уже более года самостоятельно изучаю web-разработку. В работе использую html/css, js/ts и фреймворк next. Четко понимаю проблемы и задачи заказчика, которые они хотят решить через создание сайта.
