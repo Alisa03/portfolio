@@ -2,6 +2,8 @@
 
 .project {
     position: relative;
+    display: flex;
+    gap: 0 30px;
     
     margin: 20px 0;
 
@@ -24,28 +26,31 @@
         width: 50%;
     }
 
-    &__title {font: 400 2rem/1 "Lato"}
+    &__title {font: 500 2rem/1 "Arimo"}
 
     &__block {
         width: 50vw;
         border-radius: 10px;
         display: inline-block;
         overflow: hidden;
-    }
-
-    
+    }    
 }
 
-@media (max-width: 770px) {
+@media (min-width: 2000px) {
+    .project__block {width: 40vw}
+
+    .project__img {width: 100%}
+}
+
+
+@media (max-width: 900px) {
     .project {
-        &:not(:last-child)::after {
-            content: '';
-            position: absolute;
-            bottom: -20px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background: $hoverColor;
+        flex-direction: column;
+        gap: 20px 0;
+        padding: 20px 0;
+        
+        &:last-child {
+            padding-bottom: 0;
         }
 
         &__content {
@@ -59,19 +64,30 @@
             max-width: 100%
         }
 
-        &__block {
-            width: 100%;
+        &__block {width: 100%}
+
+        &:not(:last-child)::after {
+            content: '';
+            position: absolute;
+            bottom: -20px;
+            left: 5%;
+            width: 90%;
+
+            height: 2px;
+            background: $hoverColor;
         }
     }
 }
 
 @media (max-width: 500px) {
-    .project__img {
-        width: 95vw;
-        margin: 0 auto
-    }
+    .project {
+        
+        
+        &__img {
+            width: 95vw;
+            margin: 0 auto
+        }
 
-    .project__text {
-        text-align: justify;
+        &__text {text-align: justify}
     }
 }

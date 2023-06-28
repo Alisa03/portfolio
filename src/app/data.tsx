@@ -1,11 +1,11 @@
 export const works = [
     {
         id: 1,
-        name: "Wiki",
-        info: "Pet-проект. Является небольшим сборником мифов и информаци о богах. Дизайн создавался с нуля. Проект поддерживается",
+        name: "Wiki of myths",
+        info: "Небольшой сборник легенд и мифов разных стран. Разработан дизайн с нуля, проект поддерживается.",
         img: "/wiki.webp",
         skill: [
-            "TypeScript", "React", "styled-components", "дизайн", "поддержка"
+            "TypeScript", "React", "styled-components"
         ],
         urlDemo: 'alisa03.github.io/wiki-of-myths/',
         urlCode: 'https:github.com/Alisa03/wiki-of-myths'
@@ -13,17 +13,17 @@ export const works = [
     {
         id: 2,
         name: "Portfolio",
-        info: "Данный сайт. ",
+        info: "Направлен на знакомство со мной и просмотр моих работ. Дизайн с нуля, проект поддерживается.",
         img: "/portfolio.webp",
         skill: [
-            "TypeScript", "Next.js", "Scss", "дизайн", "поддержка"
+            "TypeScript", "Next.js", "Scss"
         ],
         urlCode: "https://github.com/Alisa03/portfolio"
     },
     {
         id: 3,
         name: "Finsweet",
-        info: "Первая работа с React и styled-components",
+        info: "Первая работа, сделан для знакомства с React.",
         img: "/finsweet.webp",
         skill: [
             "React", "JavaScript", "styled-components"
@@ -35,7 +35,7 @@ export const works = [
     {
         id: 4,
         name: "Epixelab",
-        info: "Одна из первых работ. Знакомство с scss",
+        info: "Одна из первых работ, простой сайт с фактами о котах. Знакомство с scss.",
         img: "/epixelab.webp",
         skill: [
             "html", "scss"

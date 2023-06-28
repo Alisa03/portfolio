@@ -1,9 +1,5 @@
 $size: 3rem;
 
-$shadows-small: generateStart(500);
-$shadows-medium: generateStart(400);
-$shadows-big: generateStart(300);
-
 @import '@/styles/constStyle.scss';
 
 @keyframes scroll {
@@ -51,6 +47,10 @@ $shadows-big: generateStart(300);
     @return unquote($value);
 }
 
+$shadows-small: generateStart(500);
+$shadows-medium: generateStart(400);
+$shadows-big: generateStart(300);
+
 .star {
     position: absolute;
     left: 0;
@@ -97,7 +97,7 @@ $shadows-big: generateStart(300);
     &__title {
         text-align: center;
         z-index: 50;
-        font: 500 6rem/1 'Lato';
+        font: 500 6rem/1 'Arimo';
     }
 
     &__scroll {

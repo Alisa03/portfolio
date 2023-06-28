@@ -5,7 +5,7 @@ import ScrollAnimation from "../ui/ScrollAnimation";
 
 export default function Project({ project }: any) {
     return (
-        <ScrollAnimation custom={`${style.section__flex} ${projectS.project} `}>
+        <ScrollAnimation custom={projectS.project}>
             <div className={projectS.project__block}>
                 <img className={projectS.project__img} src={project.img} alt="" />
             </div>

@@ -10,14 +10,14 @@
 .section {
     margin: 8vh auto;
 
-    &__flex {
-        display: flex;
-        gap:0 30px
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8vh 0;
 
-    &__title {font: 400 4rem/1 'Lato'}
+    &__title {font: 500 4rem/1 'Arimo'}
 
-    &__text {font: 400 1rem/1 'Inter'}
+    &__text {font: 400 1rem/1 'Arimo'}
 }
 
 .color {color: $hoverColor}
@@ -27,14 +27,7 @@
     align-items: center
 }
 
-.wrapper_flex {justify-content: space-between}
-
 .flexJc {justify-content: center}
-
-.flexCG {
-    flex-direction: column;
-    gap: 1.8vh 0;
-}
 
 .flexList {
     display: flex;
@@ -59,7 +52,7 @@
     border-radius: 10px;
     box-shadow: inset 0 0 10px rgb(var(--darkBlue)),
         0 0 5px 3px rgba(var(--blue), .1);
-
+        
     font-size: .8rem;
 
     padding: .5rem 1rem;
@@ -67,8 +60,8 @@
     transition: all 0.3s;
 
     &:hover {
-        box-shadow: inset 0 0 5px rgba(var(--darkBlue), .6),
-            0 0 9px 3px rgba(var(--darkBlue), .2);
+        box-shadow: inset 0 0 5px rgba(var(--blue), .6),
+            0 0 9px 3px rgba(var(--blue), .2);
 
         color: rgb(var(--blue));
 
@@ -106,11 +99,22 @@
         height: 3px;
 
         background: $lightBlue;
+        transition: transform .5s ease;
+    }
+
+    &__active &__line:nth-of-type(1) {
+        transform: rotate(45deg);
+        transform-origin: 7px 6px;
+    }
+
+    &__active &__line:nth-of-type(2) {
+        transform: rotate(-45deg);
+        transform-origin: 8px -2px;
     }
 }
 
 .social {
-    & path {transition: fill ease 1s6}
+    & path {transition: fill ease .7s}
 
     &:hover path {fill: $hoverColor}
 }
@@ -118,13 +122,8 @@
 
 @media (min-width: 2000px) {
     .container {width: 60%}
-}
 
-@media (max-width: 770px) {
-    .section__flex {
-        flex-direction: column;
-        gap: 30px 0
-    }
+    .section__text {font-size: 1.5rem}
 }
 
 @media (max-width: 650px) {

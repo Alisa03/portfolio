@@ -10,10 +10,10 @@ const Footer = () => {
         <footer id="contact" className={footer.footer}>
             <div className={style.container}>
                 <div className={footer.column}>
-                    <div className={`${style.grid__center} ${style.wrapper_flex} ${style.flexAc} ${footer._flex}`}>
+                    <div className={footer._flex}>
                         <h3 className={style.logo}>Alice</h3>
 
-                        <div className={style.flexList}>
+                        <div style={{ gridArea: "1/3", margin: "0 auto" }} className={style.flexList}>
                             <a href="https://t.me/hedgehog_witch" target="_blank">
                                 <TelegramSvg classN={style.social} />
                             </a>
@@ -28,7 +28,7 @@ const Footer = () => {
 
                         </div>
 
-                        <a className={style.section__text}
+                        <a style={{ gridArea: "1/5", marginLeft: "auto" }} className={style.section__text}
                             href="mailto:alisa033306@gmail.com">
                             alisa033306@gmail.com
                         </a>

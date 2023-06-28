@@ -9,12 +9,25 @@
 }
 
 ._flex {
-    flex-wrap: wrap;
-    gap: 2.5vh 0
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+    align-items: center;
 }
 
 .column {
     display: flex;
     flex-direction: column;
     gap: 2.5vh 0
+}
+
+@media (max-width: 900px) {
+    ._flex {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 20px
+    }
 }

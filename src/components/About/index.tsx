@@ -5,7 +5,7 @@ import style from '@/styles/page.module.scss'
 
 const About = () => {
     return (
-        <section id="about" className={`${style.section} ${style.flexCG}`} style={{ textAlign: "center" }}>
+        <section id="about" className={style.section} style={{ textAlign: "center" }}>
             <h2 className={style.section__title}>Welcome to my <span className={style.color}>portfolio</span></h2>
             <ScrollAnimation>
                 <p className={`${style.section__text} ${about.text}`}>

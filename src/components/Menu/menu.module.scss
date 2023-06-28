@@ -5,7 +5,7 @@
     gap:0 20px;
 
     & a {
-        transition: color ease 1s;
+        transition: color ease .6s;
         font-weight: 500;
     
         &:hover {color: $hoverColor}

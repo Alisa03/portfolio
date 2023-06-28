@@ -7,7 +7,7 @@ import Project from './Project'
 const Works = () => {
 
     return (
-        <section id="works" className={`${style.section} ${style.flexCG} ${style.flexAc}`}>
+        <section id="works" className={style.section}>
             <h3 className={style.section__title}>WORKS</h3>
             <div>
                 {

@@ -5,9 +5,9 @@ import ScrollAnimation from '../ui/ScrollAnimation'
 
 const Skills = () => {
     return (
-        <section id="skills" className={`${style.section} ${style.flexCG} ${style.flexAc}`}>
+        <section id="skills" className={style.section}>
             <h3 className={style.section__title}>SKILLS</h3>
-            <ScrollAnimation custom={style.section__flex}>
+            <ScrollAnimation custom={styles.flex}>
                 <div className={`${styles._block} ${styles.flexJc} ${styles.flexAc}`}>
                     <ul className={style.section__text}>
                         <li>HTML</li>
