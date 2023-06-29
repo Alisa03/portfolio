@@ -11,8 +11,8 @@ const HeaderContent = () => {
             </div>
             <div className={`${style.head__content} ${page.flexAc} ${page.flexJc}`}>
                 <h1 className={style.head__title}>
-                    Привет! Я <span className={page.color}> Alice</span> и <br /> я <span className={page.color}>
-                        front-end developer
+                    Привет! Я <span className={page.color}> Алиса</span> и <br /> я <span className={page.color}>
+                        frontend разработчик
                     </span>
                 </h1>
             </div>

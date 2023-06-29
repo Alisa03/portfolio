@@ -15,7 +15,10 @@
     align-items: center;
     gap: 1.8vh 0;
 
-    &__title {font: 400 4rem/1 'Arimo'}
+    &__title {
+        font: 400 4rem/1 'Arimo';
+        text-align: center;
+    }
 
     &__text {font: 400 1rem/1 'Arimo'}
 }
@@ -129,6 +132,7 @@
 @media (max-width: 650px) {
     .burger {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         gap: 10px 0;
 

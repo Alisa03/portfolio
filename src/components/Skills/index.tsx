@@ -13,6 +13,7 @@ const Skills = () => {
                     <ul className={style.section__text}>
                         <li>HTML</li>
                         <li>CSS</li>
+                        <li>Scss</li>
                         <li>JavaScript</li>
                         <li>TypeScript</li>
                     </ul>
@@ -22,7 +23,6 @@ const Skills = () => {
                         <h5 className={styles._title}>Другое</h5>
                         <li>React</li>
                         <li>Next.js</li>
-                        <li>Scss</li>
                         <li>Wagmi</li>
                         <li>Git</li>
                     </ul>

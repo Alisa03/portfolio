@@ -16,7 +16,7 @@ const MobileMenu = () => {
     return (
         <>
             <MenuList styleList={menu.menu} />
-            <button onClick={Modal} className={`${style.btn} ${style.burger} ${style.flexCG} ${style.flexAc} ${open && style.burger__active}`}>
+            <button onClick={Modal} className={`${style.btn} ${style.burger} ${style.flexAc} ${open ? style.burger__active : ''}`}>
                 <span className={style.burger__line} />
                 <span className={style.burger__line} />
             </button>

@@ -138,12 +138,16 @@ $shadows-big: generateStart(300);
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1024px) {
+    .head__title {font-size: 5rem}
+}
+
+@media (max-width: 800px) {
     .head__title {font-size: 4rem}
 }
 
-@media (max-width: 500px) {
-    .head__title {font-size: 3rem}
+@media (max-width: 600px) {
+    .head__title {font-size: 3.4rem}
 }
 
 @media (max-width: 400px) {

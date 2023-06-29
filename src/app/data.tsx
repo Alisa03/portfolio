@@ -7,8 +7,8 @@ export const works = [
         skill: [
             "TypeScript", "React", "styled-components"
         ],
-        urlDemo: 'alisa03.github.io/wiki-of-myths/',
-        urlCode: 'https:github.com/Alisa03/wiki-of-myths'
+        urlDemo: 'https://alisa03.github.io/wiki-of-myths/',
+        urlCode: 'https://github.com/Alisa03/wiki-of-myths'
     },
     {
         id: 2,
@@ -23,13 +23,12 @@ export const works = [
     {
         id: 3,
         name: "Finsweet",
-        info: "Многостраничный сайт созданный для знакомства с церковью.",
+        info: "Многостраничный сайт церкови.",
         img: "/finsweet.webp",
         skill: [
             "React", "JavaScript", "styled-components"
         ],
-        urlDemo: 'https:alisa03.github.io/finsweet/',
-        urlCode: 'https:github.com/Alisa03/finsweet'
+        urlDemo: 'https://alisa03.github.io/finsweet/',
 
     },
     {
@@ -41,6 +40,6 @@ export const works = [
             "html", "scss"
         ],
         urlDemo: 'https://alisa03.github.io/epixelab/',
-        urlCode: 'https:github.com/Alisa03/epixelab'
+        urlCode: 'https://github.com/Alisa03/epixelab'
     }
 ]
