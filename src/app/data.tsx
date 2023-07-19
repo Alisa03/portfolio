@@ -12,16 +12,6 @@ export const works = [
     },
     {
         id: 2,
-        name: "Portfolio",
-        info: "Направлен на знакомство со мной и просмотр моих работ. Дизайн с нуля, проект поддерживается.",
-        img: "/portfolio.webp",
-        skill: [
-            "TypeScript", "Next.js", "Scss"
-        ],
-        urlCode: "https://github.com/Alisa03/portfolio"
-    },
-    {
-        id: 3,
         name: "Finsweet",
         info: "Многостраничный сайт церкови.",
         img: "/finsweet.webp",
@@ -32,7 +22,7 @@ export const works = [
 
     },
     {
-        id: 4,
+        id: 3,
         name: "Epixelab",
         info: "Лендинг для фактов о котах.",
         img: "/epixelab.webp",
@@ -41,5 +31,16 @@ export const works = [
         ],
         urlDemo: 'https://alisa03.github.io/epixelab/',
         urlCode: 'https://github.com/Alisa03/epixelab'
-    }
+    },
+    {
+        id: 4,
+        name: "Hoodie cats",
+        info: "Лендинг одноименной nft-коллекции. В разработке.",
+        img: "/cats.webp",
+        skill: [
+            "React", "TypeScript", "scss"
+        ],
+        urlDemo: '',
+        urlCode: ''
+    },
 ]
