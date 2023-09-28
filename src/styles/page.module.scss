@@ -8,7 +8,7 @@
 .block {height: 80vh}
 
 .section {
-    margin: 8vh auto;
+    margin: 6vh auto;
 
     display: flex;
     flex-direction: column;
@@ -90,32 +90,6 @@
     }
 }
 
-.burger {
-    display: none;
-
-    width: 40px;
-    height: 40px;
-
-    &__line {
-        display: block;
-        width: 30px;
-        height: 3px;
-
-        background: $lightBlue;
-        transition: transform .5s ease;
-    }
-
-    &__active &__line:nth-of-type(1) {
-        transform: rotate(45deg);
-        transform-origin: 7px 6px;
-    }
-
-    &__active &__line:nth-of-type(2) {
-        transform: rotate(-45deg);
-        transform-origin: 8px -2px;
-    }
-}
-
 .social {
     & path {transition: fill ease .7s}
 
@@ -127,17 +101,6 @@
     .container {width: 60%}
 
     .section__text {font-size: 1.5rem}
-}
-
-@media (max-width: 650px) {
-    .burger {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 10px 0;
-
-        z-index: 150;
-    }
 }
 
 @media (max-width: 500px) {

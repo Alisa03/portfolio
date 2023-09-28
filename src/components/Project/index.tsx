@@ -6,11 +6,20 @@ import ScrollAnimation from "../ui/ScrollAnimation";
 export default function Project({ project }: any) {
     return (
         <ScrollAnimation custom={projectS.project}>
-            <a target="_blank" href={project.urlDemo}>
-                <div className={projectS.project__block}>
-                    <img className={projectS.project__img} src={project.img} alt="" />
-                </div>
-            </a>
+            {
+                project.urlDemo ?
+                    <a target="_blank" href={project.urlDemo}>
+                        <div className={projectS.project__block}>
+                            <img className={projectS.project__img} src={project.img} alt="" />
+                        </div>
+                    </a> :
+                    <a href="#">
+                        <div className={projectS.project__block}>
+                            <img className={projectS.project__img} src={project.img} alt="" />
+                        </div>
+                    </a>
+            }
+
             <div className={`${projectS.project__content}`}>
                 <div className={style.flexList}>
                     {
@@ -21,12 +30,16 @@ export default function Project({ project }: any) {
                 <p className={`${style.section__text} ${projectS.project__text}`}>{project.info}</p>
                 <div className={style.flexList}>
                     {
-                        project.urlDemo && project.urlDemo !== '' &&
+                        project?.urlDemo &&
                         <a className={style.btn} target="_blank" href={project.urlDemo}>Demo</a>
                     }
                     {
-                        project.urlCode && project.urlCode !== '' &&
+                        project?.urlCode &&
                         <a className={style.btn} target="_blank" href={project.urlCode}>Code</a>
+                    }
+
+                    {
+
                     }
                 </div>
             </div>

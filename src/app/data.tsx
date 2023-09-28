@@ -11,36 +11,21 @@ export const works = [
         urlCode: 'https://github.com/Alisa03/wiki-of-myths'
     },
     {
-        id: 2,
-        name: "Finsweet",
-        info: "Многостраничный сайт церкови.",
-        img: "/finsweet.webp",
-        skill: [
-            "React", "JavaScript", "styled-components"
-        ],
-        urlDemo: 'https://alisa03.github.io/finsweet/',
-
-    },
-    {
-        id: 3,
-        name: "Epixelab",
-        info: "Лендинг для фактов о котах.",
-        img: "/epixelab.webp",
-        skill: [
-            "html", "scss"
-        ],
-        urlDemo: 'https://alisa03.github.io/epixelab/',
-        urlCode: 'https://github.com/Alisa03/epixelab'
-    },
-    {
         id: 4,
         name: "Hoodie cats",
         info: "Лендинг одноименной nft-коллекции. В разработке.",
         img: "/cats.webp",
         skill: [
             "React", "TypeScript", "scss"
-        ],
-        urlDemo: '',
-        urlCode: ''
+        ]
     },
+    {
+        id: 3,
+        name: "EtherQuest",
+        info: 'Сайт для minecraft сервер с криптой и nft. В разработке.',
+        img: "/EtherQuest.webp",
+        skill: [
+            "React", "TypeScript", "scss", "Wagmi"
+        ]
+    }
 ]

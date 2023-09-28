@@ -28,7 +28,7 @@ const Footer = () => {
 
                         </div>
 
-                        <a style={{ gridArea: "1/5", marginLeft: "auto" }} className={style.section__text}
+                        <a className={`${footer.email} ${style.section__text}`}
                             href="mailto:alisa033306@gmail.com">
                             savenkova0333@gmail.com
                         </a>
