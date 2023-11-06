@@ -11,21 +11,22 @@ export const works = [
         urlCode: 'https://github.com/Alisa03/wiki-of-myths'
     },
     {
-        id: 4,
-        name: "Hoodie cats",
-        info: "Лендинг одноименной nft-коллекции. В разработке.",
-        img: "/cats.webp",
-        skill: [
-            "React", "TypeScript", "scss"
-        ]
-    },
-    {
         id: 3,
         name: "EtherQuest",
-        info: 'Сайт для minecraft сервер с криптой и nft. В разработке.',
+        info: 'Minecraft сервер с nft.',
         img: "/EtherQuest.webp",
         skill: [
             "React", "TypeScript", "scss", "Wagmi"
+        ],
+        urlDemo: 'https://etherquest.net/',
+    },
+    {
+        id: 4,
+        name: "Hoodie cats",
+        info: "Hoodie cats - nft-коллекция. В разработке.",
+        img: "/cats.webp",
+        skill: [
+            "React", "TypeScript", "scss", "pixi.js"
         ]
     }
 ]
