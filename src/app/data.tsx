@@ -23,10 +23,12 @@ export const works = [
     {
         id: 4,
         name: "Hoodie cats",
-        info: "Hoodie cats - nft-коллекция. В разработке.",
+        info: "Hoodie cats - nft-коллекция",
         img: "/cats.webp",
         skill: [
-            "React", "TypeScript", "scss", "pixi.js"
-        ]
+            "React", "TypeScript", "scss" 
+        ],
+        urlDemo: 'https://hoodie-cats.vercel.app/',
+        urlCode: 'https://github.com/Alisa03/Hoodie-cats'
     }
 ]
