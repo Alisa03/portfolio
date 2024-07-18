@@ -14,7 +14,7 @@ const Footer = () => {
                         <h3 className={style.logo}>Alice</h3>
 
                         <div style={{ gridArea: "1/3", margin: "0 auto" }} className={style.flexList}>
-                            <a href="https://t.me/hedgehog_witch" target="_blank">
+                            <a href="https://t.me/svetlana0333" target="_blank">
                                 <TelegramSvg classN={style.social} />
                             </a>
 
@@ -35,7 +35,7 @@ const Footer = () => {
                     </div>
 
                     <div className={style.section__text} style={{ textAlign: "center" }}>
-                        <p className={style.section__text}>©Designed & builte By Alice</p>
+                        <p className={style.section__text}>©Designed & builte By Sveta</p>
                     </div>
                 </div>
             </div>

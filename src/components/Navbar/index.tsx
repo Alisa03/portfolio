@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <header className={nav.nav}>
             <div className={`${nav._container} ${style.container}`}>
-                <h3 className={style.logo}>Alice</h3>
+                <h3 className={style.logo}>Sveta</h3>
                 <Menu />
             </div>
         </header>

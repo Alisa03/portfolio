@@ -37,10 +37,6 @@ export default function Project({ project }: any) {
                         project?.urlCode &&
                         <a className={style.btn} target="_blank" href={project.urlCode}>Code</a>
                     }
-
-                    {
-
-                    }
                 </div>
             </div>
         </ScrollAnimation>

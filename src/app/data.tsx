@@ -11,14 +11,14 @@ export const works = [
         urlCode: 'https://github.com/Alisa03/wiki-of-myths'
     },
     {
-        id: 3,
-        name: "EtherQuest",
-        info: 'Minecraft сервер с nft.',
-        img: "/EtherQuest.webp",
+        id: 1,
+        name: "TURBO JUMP TOKEN",
+        info: "Turbo Jump Token - многофункциональный токен",
+        img: "/tjt.jpg",
         skill: [
-            "React", "TypeScript", "scss", "Wagmi"
+            "TypeScript", "Next.js", "wagmi", "RainbowKit", "next-intl"
         ],
-        urlDemo: 'https://etherquest.net/',
+        urlDemo: 'https://tjt.pro'
     },
     {
         id: 4,

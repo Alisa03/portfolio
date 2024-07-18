@@ -1,23 +1,23 @@
-import style from './header.module.scss'
+import clsx from 'clsx'
+import s from './header.module.scss'
 import page from '@/styles/page.module.scss'
 
 const HeaderContent = () => {
     return (
-        <div id='home' className={style.head}>
-            <div className={style.stars}>
-                <div className={`${style.star} ${style.star1}`} />
-                <div className={`${style.star} ${style.star2}`} />
-                <div className={`${style.star} ${style.star3}`} />
+        <div id='home' className={s.head}>
+            <div className={s.stars}>
+                <div className={`${s.star} ${s.star1}`} />
+                <div className={`${s.star} ${s.star2}`} />
+                <div className={`${s.star} ${s.star3}`} />
             </div>
-            <div className={`${style.head__content} ${page.flexAc} ${page.flexJc}`}>
-                <h1 className={style.head__title}>
-                    Привет! Я <span className={page.color}> Алиса</span> и <br /> я <span className={page.color}>
-                        frontend разработчик
-                    </span>
+            <div className={`${s.head__content} ${page.flexAc} ${page.flexJc}`}>
+                <h1 className={clsx(s.head__title, page.color)}>
+                    Привет! Я Светлана, <br />
+                    frontend разработчик
                 </h1>
             </div>
-            <div className={style.head__scroll_position}>
-                <a href="#about" className={style.head__scroll} />
+            <div className={s.head__scroll_position}>
+                <a href="#about" className={s.head__scroll} />
             </div>
         </div>
     )
