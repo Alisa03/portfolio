@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-import style from '@/styles/page.module.scss'
+import { Button } from "@/shared/ui";
 
 export default function NotFoundPage() {
     return (
-        <main style={{ padding: "30px 0", flexDirection: "column" }} className={`${style.block} ${style.container} ${style.flexAc} ${style.flexJc}`}>
+        <main style={{ padding: "30px 0", flexDirection: "column" }} className="block container flex-center">
             <h1 style={{ fontSize: "10rem", letterSpacing: "2vw" }}>404</h1>
-            <Link className={`${style.section__text} ${style.btn}`} href='/'>Home</Link>
+            <Button component={Link} className="section__text" href='/'>Home</Button>
         </main>
     )
 }

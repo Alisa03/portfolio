@@ -1,0 +1,169 @@
+$size: 3rem;
+
+@keyframes scroll {
+    0% {opacity: 0}
+
+    20% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+
+    40% {opacity: 1}
+
+    100% {
+        opacity: 0;
+        transform: translateY($size/4)
+    }
+}
+
+@keyframes blink {
+    0% {opacity: 1}
+
+    50% {opacity: .2}
+
+    100% {opacity: 1}
+}
+
+.stars {
+    position: absolute;
+    inset: 0;
+        
+    background: var(--black);
+
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+@function generateStart($n) {
+    $value: "#{random(2000)}px #{random(2000)}px rgba(75, 85, 121,#{random(10)/10})";
+
+    @for $i from 0 through $n {
+        $value: "#{$value}, #{random(2000)}px #{random(2000)}px rgba(39, 48, 80,#{random(10) / 10})";
+    }
+
+    @return unquote($value);
+}
+
+$shadows-small: generateStart(500);
+$shadows-medium: generateStart(400);
+$shadows-big: generateStart(300);
+
+.star {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    background: transparent;
+    border-radius: 100%;
+    box-shadow: $shadows-small;
+    
+    &1{
+        width: 2px;
+        height: 2px;
+
+        animation: blink 1s infinite
+    }
+    &2 {
+        width: 3.5px;
+        height: 3.5px;
+
+        animation: blink 2s infinite
+    }
+    &3 {
+        width: 4px;
+        height: 4px;
+
+        animation: blink 2.5s infinite
+    }
+}
+
+.head {
+    background: var(--dark-background);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
+}
+
+.content {
+    grid-area: 1/1/6/6;
+
+    z-index: 5;
+}
+
+.title {
+    font: 500 4.5rem/1 'Montserrat Alternates';
+}
+
+.scroll {
+    position: relative;
+    display: block;
+        
+    height: $size;
+    width: $size * .6;
+
+    border: $size/20 solid var(--light-blue);
+    border-radius: $size;
+
+    &:before {
+        content: '';
+        position: absolute;
+
+        left: calc(50% - $size / 20);
+        top: $size/5;
+        
+        height: $size/10;
+        width: $size/10;
+        
+        background: var(--light-blue);
+        border-radius: 50%;
+        
+        animation: scroll 4.0s infinite;
+    }
+
+    &_position {
+        grid-area: 5 / 3 / 6 / 4;
+
+        display: block;
+        
+        margin: 0 auto;
+        width: $size * .6;
+        height: $size;
+    }
+}
+
+.img {width: 35vw}
+
+@media (max-width: 1030px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .title {
+        font-size: 4rem;
+
+        text-align: center;
+    }
+
+    .scroll_position {grid-area: 6 / 3 / 6 / 4;}
+
+    .img {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .title {font-size: 3.4rem}
+}
+
+@media (max-width: 400px) {
+    .title {font-size: 2.5rem}
+}

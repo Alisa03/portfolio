@@ -1,22 +1,14 @@
 import React from "react";
 
-import style from "@/styles/page.module.scss"
-
-import HeaderContent from "@/components/Header";
-import Works from '@/components/Works';
-import Skills from '@/components/Skills';
-import About from "@/components/About";
+import { About, Header, Skills, Works } from "@/screens";
 
 export default function Home() {
-
-  return (
-    <main>
-      <HeaderContent />
-      <div className={style.container}>
+  return <>
+      <Header />
+      <div className="container">
         <About />
         <Skills />
         <Works />
       </div>
-    </main>
-  )
+    </>
 }

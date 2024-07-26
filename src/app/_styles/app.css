@@ -1,0 +1,90 @@
+.container {
+    width: 88%;
+    margin: 0 auto;
+}
+
+.block {height: 80vh}
+
+.section {
+    margin: 6vh auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8vh 0;
+}
+.section__title {
+    font: 400 4rem/1 "Montserrat Alternates";
+    text-align: center;
+
+    background: -webkit-linear-gradient(var(--blue), var(--hover-color));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.section__text {
+    font: 400 1rem/1 "Arimo";
+}
+
+.color {color: var(--hover-color)}
+
+.flex {display: flex}
+.list {
+    align-items: center;
+    gap: 1rem;
+}
+
+.justify_list {
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vh;
+}
+
+.justify {
+    margin: 2rem 0;
+
+    align-items: center;
+    justify-content: space-between;
+    gap: 3vh;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.8vh 10px;
+}
+
+.logo {
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--hover-color);
+}
+
+@media (min-width: 2000px) {
+    .container {width: 60%}
+
+    .section__text {font-size: 1.5rem}
+}
+
+@media (max-width: 500px) {
+    .container {width: 90%}
+
+    .project__img {
+        width: 95vw;
+        margin: 0 auto;
+    }
+
+    .section__title {font-size: 3rem}
+}
+
+@media (max-width: 400px) {
+    .container {width: 98%}
+
+    .section__title {font-size: 2.2rem}
+}

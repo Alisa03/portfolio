@@ -1,12 +1,10 @@
-import '@/styles/globals.scss'
+import { Layout } from '@/screens'
 
-import Layout from '@/components/Layout'
+import '@/app/_styles/index.css'
 
 const MyApp = ({ Component, pageProps }: any) => {
-    return (
-        <Layout>
-            <Component {...pageProps} />
-        </Layout>
-    )
+    return <Layout>
+        <Component {...pageProps} />
+    </Layout>
 }
 export default MyApp
