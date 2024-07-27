@@ -30,7 +30,7 @@ $size: 3rem;
         
     background: var(--black);
 
-    height: 100vh;
+    height: 100%;
     width: 100%;
     overflow: hidden;
 }
@@ -79,20 +79,23 @@ $shadows-big: generateStart(300);
 }
 
 .head {
-    background: var(--dark-background);
+    position: relative;
+
     width: 100%;
     height: 100vh;
-    position: relative;
 
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     grid-column-gap: 0;
     grid-row-gap: 0;
+
+    background: var(--dark-background);
 }
 
 .content {
-    grid-area: 1/1/6/6;
+    padding: 5rem 0;
+    grid-area: 1/1/5/6;
 
     z-index: 5;
 }
@@ -161,7 +164,15 @@ $shadows-big: generateStart(300);
 }
 
 @media (max-width: 600px) {
-    .title {font-size: 3.4rem}
+    .title {font-size: 3rem}
+
+    .head {height: 120dvh}
+
+    .content {
+        padding-top: 6rem;
+
+        grid-area: 1 / 1 / 6 / 6
+    }
 }
 
 @media (max-width: 400px) {
