@@ -5,25 +5,17 @@ import { Button, ScrollAnimation } from '@/shared/ui';
 import s from './project.module.scss'
 
 export const Project = ({ project }: { project: IProject }) => {
-    return <ScrollAnimation custom={s.project}>
-        {
-            project.urlDemo ?
-                <a target="_blank" href={project.urlDemo}>
-                    <div className={s.project__block}>
-                        <img className={s.project__img} src={project.img} alt="" />
-                    </div>
-                </a> :
-                <a href="#">
-                    <div className={s.project__block}>
-                        <img className={s.project__img} src={project.img} alt="" />
-                    </div>
-                </a>
-        }
+    return <ScrollAnimation customClass={s.project}>
 
+        <a href={project.urlDemo}>
+            <div className={s.project__block}>
+                <img className={s.project__img} src={project.img} alt="" />
+            </div>
+        </a>
         <div className={s.project__content}>
             <div className="flex-list">
                 {
-                    project.skill.map((i: any, index: any) => <div key={index} className={s.teg}>{i}</div>)
+                    project.skill.map((i: string, index: number) => <div key={index} className={s.teg}>{i}</div>)
                 }
             </div>
             <h4 className={s.project__title}>{project.name}</h4>

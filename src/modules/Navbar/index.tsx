@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import clsx from "clsx";
 
 import { Menu } from "./Menu";
 
@@ -19,7 +20,7 @@ export const Navbar = () => {
                     <h3 className="logo">Sveta</h3>
                 </Link>
                 <Menu isOpen={isOpen} setIsOpen={setIsOpen} />
-                <button onClick={() => setIsOpen((prevState) => !prevState)} className={`btn ${s.burger} ${isOpen ? s.burger__active : ''}`}>
+                <button onClick={() => setIsOpen((prevState) => !prevState)} className={clsx("btn", s.burger, { [s.burger__active]: isOpen })}>
                     <span className={s.burger__line} />
                     <span className={s.burger__line} />
                 </button>

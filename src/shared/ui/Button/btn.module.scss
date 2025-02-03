@@ -1,66 +1,68 @@
 .btn {
-    --blue: 125, 160, 202;
-    --darkBlue: 5, 38, 89;
+  --blue: 125, 160, 202;
+  --darkBlue: 5, 38, 89;
 
-    position: relative;
+  position: relative;
 
-    background: rgba(var(--darkBlue), 0.2);
-    border: 2px solid rgb(var(--blue));
-    border-radius: 10px;
-    box-shadow:
-        inset 0 0 10px rgb(var(--darkBlue)),
-        0 0 5px 3px rgba(var(--blue), 0.1);
+  padding: 0.5rem 1rem;
+  min-width: 5rem;
 
-    font-size: 0.8rem;
+  background: rgba(var(--darkBlue), 0.2);
+  border: 2px solid rgb(var(--blue));
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgb(var(--darkBlue)),
+    0 0 5px 3px rgba(var(--blue), 0.1);
 
-    padding: 0.5rem 1rem;
-    overflow: hidden;
-    transition: all 0.3s;
+  font-size: 0.8rem;
+  text-align: center;
 
-    &:hover {
-        box-shadow:
-            inset 0 0 5px rgba(var(--blue), 0.6),
-            0 0 9px 3px rgba(var(--blue), 0.2);
+  overflow: hidden;
+  transition: all 0.3s;
 
-        color: rgb(var(--blue));
+  &:hover {
+    box-shadow: inset 0 0 5px rgba(var(--blue), 0.6),
+      0 0 9px 3px rgba(var(--blue), 0.2);
 
-        &:before {
-            transform: translateX(15em);
-        }
-    }
+    color: rgb(var(--blue));
+    background-color: var(--dark-blue);
 
     &:before {
-        content: "";
-        position: absolute;
-
-        left: -4em;
-        top: 0;
-
-        width: 4em;
-        height: 100%;
-
-        background: rgba(var(--darkGreen), 0.2);
-
-        transition: transform 0.4s ease-in-out;
+      transform: translateX(15em);
     }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+
+    left: -4em;
+    top: 0;
+
+    width: 4em;
+    height: 100%;
+
+    background: rgba(var(--darkGreen), 0.2);
+
+    transition: transform 0.4s ease-in-out;
+  }
 }
 
 .loader {
-    $loader-size: 30px;
-    $loader-border-size: 2px;
-    $loader-border-color: var(--color-text);
+  $loader-size: 30px;
+  $loader-border-size: 2px;
+  $loader-border-color: var(--color-text);
 
-    position: relative;
+  position: relative;
 
-    width: $loader-size;
-    height: $loader-size;
+  width: $loader-size;
+  height: $loader-size;
 
-    background-color: transparent;
-    border: $loader-border-size solid $loader-border-color;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-radius: 50%;
+  background-color: transparent;
+  border: $loader-border-size solid $loader-border-color;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  border-radius: 50%;
 
-    animation: rotateX 1s infinite linear;
+  animation: rotateX 1s infinite linear;
 }

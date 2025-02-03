@@ -30,6 +30,6 @@ export const works: IProject[] = [
     name: "Best Technology cooking",
     img: "/btc.webp",
     skill: ["React", "TypeScript", "scss", "i18next"],
-    urlDemo: "https://btcooking.com/",
+    urlDemo: "https://btc-umber.vercel.app/",
   },
 ];

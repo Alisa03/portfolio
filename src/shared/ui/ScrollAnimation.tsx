@@ -1,6 +1,7 @@
-import { useEffect, useRef, useState } from "react";
+import clsx from "clsx";
+import { ReactElement, ReactNode, useEffect, useRef, useState } from "react";
 
-export const ScrollAnimation = ({ children, custom }: any) => {
+export const ScrollAnimation = ({ children, customClass }: { children: ReactElement | ReactNode, customClass?: string }) => {
     const boxes: any = useRef(null);
     const [visible, setVisible] = useState(false)
 
@@ -16,7 +17,7 @@ export const ScrollAnimation = ({ children, custom }: any) => {
         (typeof window !== "undefined") && window.addEventListener('scroll', Scroll)
     }, [])
 
-    return <div ref={boxes} onScroll={Scroll} className={`${visible ? "box show" : "box"} ${custom}`}>
+    return <div ref={boxes} onScroll={Scroll} className={clsx("box", { "show": visible }, customClass)}>
         {children}
     </div>
 }
